@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -13,14 +9,25 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "module": "esnext",
+    "baseUrl": "./src", // all paths are relative to the baseUrl
+    "paths": {
+      "~/*": ["*"] // resolve any `~/foo/bar` to `<baseUrl>/foo/bar`
+    }
   },
-  "include": [
-    "src"
+  "include": ["src", "src/**/*.tsx"],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./@types",
+    "./@types/*.ts",
+    "./@types/*.d.ts",
+    "src/@types/*",
+    "src/@types/*.d.ts"
   ]
 }
