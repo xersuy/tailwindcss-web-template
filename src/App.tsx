@@ -8,7 +8,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <RotuerScrollTop />
-
       <Routes>
         <Route path="" element={<Navigate to="/main" />} />
         <Route path="/main" element={<MainhomePage />} />

@@ -21,6 +21,7 @@
       "~/*": ["*"] // resolve any `~/foo/bar` to `<baseUrl>/foo/bar`
     }
   },
+
   "include": ["src", "src/**/*.tsx"],
   "typeRoots": [
     "./node_modules/@types",

@@ -1,8 +1,9 @@
-@import url(./fonts.css);
+/* @import url(./fonts.css); */
 @import url(./tailwind.css);
+@import url(./custom-react-slick.css);
 
 * {
-  font-family: "Noto Sans KR";
+  font-family: 'Noto Sans KR';
   letter-spacing: -0.8px;
 }
 *::-webkit-scrollbar {
