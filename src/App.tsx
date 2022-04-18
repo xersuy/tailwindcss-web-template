@@ -5,9 +5,10 @@ import RotuerScrollTop from './components/commons/RotuerScrollTop';
 import MainhomePage from './pages/MainhomePage';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 const App = () => {
   library.add(fas);
-
+  library.add(fab);
   return (
     <BrowserRouter>
       <RotuerScrollTop />

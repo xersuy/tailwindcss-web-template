@@ -3,6 +3,7 @@ import Slider, { Settings } from 'react-slick';
 import MainContent from '~/components/contents/MainContent';
 type MainCarouselProps = {};
 
+// 메인페이지에서 캐러셀 섹션
 const MainCarousel: FC<MainCarouselProps> = ({}) => {
   const slider = useRef<Slider | null>(null);
 
