@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import Footer from './Footer';
 import Header from './Header';
 
 interface WrapContainerProps extends React.HTMLAttributes<Element> {
@@ -7,10 +8,11 @@ interface WrapContainerProps extends React.HTMLAttributes<Element> {
 
 const WrapContainer: FC<WrapContainerProps> = ({ children, ...props }) => {
   return (
-    <div className="w-full border-2 ">
+    <div className="w-full">
       <Header />
 
       {children}
+      <Footer />
     </div>
   );
 };
