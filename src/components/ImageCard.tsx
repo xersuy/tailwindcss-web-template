@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 
 type ImageCardProps = {
   title?: string; //타이틀
-  contents?: string;
-  imagePath?: any;
+  contents?: string; //내용
+  imagePath?: any; //이미지 파일
 };
 
 const ImageCard: FC<ImageCardProps> = ({
@@ -16,17 +16,18 @@ const ImageCard: FC<ImageCardProps> = ({
       {imagePath && (
         <div>
           <img
-            className={'hidden w-500 h-auto sm:block rounded-t-xl'}
+            className={' w-full h-auto max-h-[220px] sm:block rounded-t-xl'}
             loading="lazy"
             src={imagePath}
             alt="about_us_image"
-            width="100%"
+            // width="100%"
+            // maxHeight={''}
             // height=""
           />
         </div>
       )}
 
-      <div className="p-5  h-[180px]  ">
+      <div className="p-5  h-[180px]">
         <div className="text-2xl font-bold">{title ?? ''}</div>
         <div className="flex text-md h-[110px]">{contents ?? ''}</div>
       </div>

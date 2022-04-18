@@ -1,3 +1,11 @@
 .main_content .slick-dots {
   bottom: 20px;
 }
+
+.vendor_class .slick-list {
+  text-align: center;
+}
+
+.vendor_class .slick-list > slick-track {
+  text-align: center;
+}

@@ -1,4 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { FC } from 'react';
 import WrapDiv from '~/components/commons/WrapDiv';
 import LineIconRow from '~/components/LineIconRow';
@@ -17,7 +16,7 @@ const AboutUs: FC<AboutUsProps> = () => {
         </div>
         <div className="flex flex-col items-center justify-center w-full">
           <img
-            className={'hidden w-500 h-auto sm:block rounded-xl'}
+            className={'w-500 h-auto sm:block rounded-xl'}
             loading="lazy"
             src={require('~/assets/img/dental_sm.png')}
             alt="about_us_image"
