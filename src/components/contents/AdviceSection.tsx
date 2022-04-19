@@ -4,9 +4,9 @@ import WrapDiv from '../commons/WrapDiv';
 
 type Props = {};
 
-const AdviceOrthobit = (props: Props) => {
+const AdviceSection = (props: Props) => {
   return (
-    <WrapDiv className="p-8 px-16 bg-sky-200 ">
+    <WrapDiv className="px-16 p- bg-sky-200 ">
       <div className="flex flex-row items-center w-full">
         <FontAwesomeIcon
           className="flex mr-20"
@@ -27,5 +27,5 @@ const AdviceOrthobit = (props: Props) => {
   );
 };
 
-export default AdviceOrthobit;
+export default AdviceSection;
 // px-16 pt-16 pb-[7.5rem]

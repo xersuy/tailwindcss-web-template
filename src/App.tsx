@@ -6,6 +6,7 @@ import MainhomePage from './pages/MainhomePage';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import CompanyPage from './pages/CompanyPage';
 const App = () => {
   library.add(fas);
   library.add(fab);
@@ -15,6 +16,7 @@ const App = () => {
       <Routes>
         <Route path="" element={<Navigate to="/main" />} />
         <Route path="/main" element={<MainhomePage />} />
+        <Route path="/company" element={<CompanyPage />} />
       </Routes>
     </BrowserRouter>
   );

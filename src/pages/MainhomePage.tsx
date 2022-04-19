@@ -2,7 +2,7 @@ import React from 'react';
 import WrapContainer from '~/components/commons/WrapContainer';
 import AboutUs from '~/components/contents/AboutUs';
 import AdvantageContents from '~/components/contents/AdvantageContents';
-import AdviceOrthobit from '~/components/contents/AdviceOrthobit';
+import AdviceSection from '~/components/contents/AdviceSection';
 import MainCarousel from '~/containers/MainCarousel';
 import VendorsContainer from '~/containers/VendorsContainer';
 
@@ -21,7 +21,7 @@ const MainhomePage = (props: Props) => {
       <AdvantageContents />
       <VendorsContainer />
 
-      <AdviceOrthobit />
+      <AdviceSection />
     </WrapContainer>
   );
 };

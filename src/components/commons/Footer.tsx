@@ -11,8 +11,8 @@ const Footer = (props: Props) => {
             <img
               className={'lg:block w-[200px] sm:block rounded-t-xl'}
               loading="lazy"
-              src={require('~/assets/img/logo/orthobit_logo_color.png')}
-              alt="orthobit_logo_color"
+              src={require('~/assets/img/logo/logo_bk.png')}
+              alt="logo_color"
             />
           </h1>
           <div className="">

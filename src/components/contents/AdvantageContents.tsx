@@ -8,7 +8,7 @@ type Props = {};
 const AdvantageContents = (props: Props) => {
   return (
     <WrapDiv className="px-8 pt-16 pb-[7.5rem] bg-white ">
-      <SectionTitle text={'Start ORTHOBIT'} />
+      <SectionTitle text={'Start Lorem Ipsum'} />
 
       <div className="flex flex-row justify-between mt-8">
         <ImageCard
