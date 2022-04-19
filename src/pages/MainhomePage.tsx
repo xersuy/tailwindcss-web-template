@@ -20,7 +20,8 @@ const MainhomePage = (props: Props) => {
       <AboutUs />
       <AdvantageContents />
       <VendorsContainer />
-      {/* <AdviceOrthobit /> */}
+
+      <AdviceOrthobit />
     </WrapContainer>
   );
 };

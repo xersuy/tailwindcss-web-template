@@ -5,11 +5,11 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <footer className="bg-white">
-      <div className="flex flex-col w-full py-10 m-auto max-w-9xl">
-        <div className="flex flex-row justify-between">
+      <div className="flex flex-col w-full px-16 m-auto max-w-9xl">
+        <div className="flex flex-row justify-between pt-8 pb-4">
           <h1>
             <img
-              className={'lg:block w-[200px]  sm:block rounded-t-xl'}
+              className={'lg:block w-[200px] sm:block rounded-t-xl'}
               loading="lazy"
               src={require('~/assets/img/logo/orthobit_logo_color.png')}
               alt="orthobit_logo_color"
@@ -25,8 +25,8 @@ const Footer = (props: Props) => {
           </div>
         </div>
         <hr className="f-hr" />
-        <div className="footer-middle">
-          <div className="f-info">
+        <div className="flex flex-row justify-between py-8">
+          <div className="flex flex-col">
             <h3>회사 정보</h3>
             <ul>
               <li>이메일 : Lorem@email.com</li>
@@ -37,6 +37,50 @@ const Footer = (props: Props) => {
               <li>주소 : Lorem Ipsum is simply dummy</li>
             </ul>
           </div>
+          <div className="flex flex-col">
+            <h3 className="font-bold">Lorem Ipsum</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="font-bold">Lorem Ipsum</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="font-bold">Lorem Ipsum</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="font-bold">Lorem Ipsum</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+          <div className="flex flex-col">
+            <h3 className="font-bold">Lorem Ipsum</h3>
+            <ul>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+              <li>Lorem Ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <hr className="f-hr" />
+        <div className="flex flex-col justify-center h-16">
+          <div className="text-sm"> ⓒ 2021 MGATE. All rights reserved.</div>
         </div>
       </div>
       {/* <div className="inner">
