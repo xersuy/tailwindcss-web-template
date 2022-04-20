@@ -9,7 +9,7 @@ const Footer = (props: Props) => {
         <div className="flex flex-row justify-between pt-8 pb-4">
           <h1>
             <img
-              className={'lg:block w-[200px] sm:block rounded-t-xl'}
+              className={'lg:block w-[200px] sm:block'}
               loading="lazy"
               src={require('~/assets/img/logo/logo_bk.png')}
               alt="logo_color"
@@ -25,8 +25,9 @@ const Footer = (props: Props) => {
           </div>
         </div>
         <hr className="f-hr" />
-        <div className="flex flex-row justify-between py-8">
-          <div className="flex flex-col">
+
+        <div className="flex flex-row justify-between w-full py-8">
+          <div className="flex flex-col max-w-[500px]">
             <h3>회사 정보</h3>
             <ul>
               <li>이메일 : Lorem@email.com</li>
@@ -37,44 +38,39 @@ const Footer = (props: Props) => {
               <li>주소 : Lorem Ipsum is simply dummy</li>
             </ul>
           </div>
-          <div className="flex flex-col">
-            <h3 className="font-bold">Lorem Ipsum</h3>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-            </ul>
+          <div className="flex justify-between w-full max-w-[500px]">
+            <div className="flex flex-col items-center">
+              <h3 className="font-bold">Lorem Ipsum</h3>
+              <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center">
+              <h3 className="font-bold">Lorem Ipsum</h3>
+              <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </div>
+            <div className="flex flex-col items-center">
+              <h3 className="font-bold">Lorem Ipsum</h3>
+              <ul>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+                <li>Lorem Ipsum</li>
+              </ul>
+            </div>
           </div>
+
           <div className="flex flex-col">
-            <h3 className="font-bold">Lorem Ipsum</h3>
+            <h3 className="font-bold">Account</h3>
             <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <h3 className="font-bold">Lorem Ipsum</h3>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <h3 className="font-bold">Lorem Ipsum</h3>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-            </ul>
-          </div>
-          <div className="flex flex-col">
-            <h3 className="font-bold">Lorem Ipsum</h3>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
-              <li>Lorem Ipsum</li>
+              <li className="text-right">Lorem Ipsum is simply dummy </li>
+              <li className="text-right">Lorem Ipsum is simply</li>
+              <li className="text-right">Lorem Ipsum</li>
             </ul>
           </div>
         </div>
