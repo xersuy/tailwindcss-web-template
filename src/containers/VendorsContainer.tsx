@@ -23,7 +23,7 @@ const VendorsContainer = (props: Props) => {
   };
 
   return (
-    <WrapDiv className="px-16 py-16 bg-gray-300 vendor_class">
+    <WrapDiv className="px-16 bg-gray-300 py-9 vendor_class">
       <SectionTitle text={'Vendor Hospitals'} className={'justify-start'} />
       <ul className="mt-16">
         <Slider

@@ -6,7 +6,7 @@ type Props = {};
 
 const AdviceSection = (props: Props) => {
   return (
-    <WrapDiv className="px-16 p- bg-sky-200 ">
+    <WrapDiv className="p-8 px-16 bg-sky-200 ">
       <div className="flex flex-row items-center w-full">
         <FontAwesomeIcon
           className="flex mr-20"
@@ -19,7 +19,7 @@ const AdviceSection = (props: Props) => {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </div>
-        <button className="flex ml-auto border-2 w-full max-w-[200px] justify-center items-center h-10 border-white">
+        <button className="flex ml-auto border-2 w-full max-w-[200px] justify-center  h-8 rounded-[4px]  items-center border-white">
           REQUEST
         </button>
       </div>

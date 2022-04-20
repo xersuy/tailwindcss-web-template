@@ -470,6 +470,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   pointer-events: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -478,12 +482,72 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[5rem\] {
+  top: 5rem;
+}
+
+.top-\[4rem\] {
+  top: 4rem;
+}
+
+.top-\[9rem\] {
+  top: 9rem;
+}
+
+.top-\[7rem\] {
+  top: 7rem;
+}
+
+.top-\[3rem\] {
+  top: 3rem;
+}
+
+.top-\[3\.5rem\] {
+  top: 3.5rem;
+}
+
+.top-\[5\.5rem\] {
+  top: 5.5rem;
+}
+
 .z-\[9999\] {
   z-index: 9999;
 }
 
+.z-\[99999\] {
+  z-index: 99999;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.m-\[1\.5rem\] {
+  margin: 1.5rem;
+}
+
+.m-\[1rem\] {
+  margin: 1rem;
+}
+
+.m-\[10px\] {
+  margin: 10px;
+}
+
+.m-\[8px\] {
+  margin: 8px;
 }
 
 .mx-auto {
@@ -535,6 +599,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mt-\[8px\] {
+  margin-top: 8px;
+}
+
+.mt-\[1rem\] {
+  margin-top: 1rem;
+}
+
+.mt-\[0\.8rem\] {
+  margin-top: 0.8rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -571,8 +647,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-8 {
+  height: 2rem;
 }
 
 .h-64 {
@@ -581,6 +657,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.h-\[6rem\] {
+  height: 6rem;
+}
+
+.h-\[8rem\] {
+  height: 8rem;
+}
+
+.h-\[8\.5rem\] {
+  height: 8.5rem;
 }
 
 .max-h-\[220px\] {
@@ -619,6 +707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 200px;
 }
 
+.max-w-\[32rem\] {
+  max-width: 32rem;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -626,6 +718,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .transform {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-1 {
@@ -682,6 +778,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.rounded-\[4px\] {
+  border-radius: 4px;
+}
+
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
@@ -727,6 +827,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -735,6 +840,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-sky-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(186 230 253 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -753,6 +863,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 20px;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -768,9 +882,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 4rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .py-8 {
@@ -830,6 +944,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: -0.01em;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -840,6 +960,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .tracking-tight {
