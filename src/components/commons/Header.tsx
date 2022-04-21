@@ -18,7 +18,7 @@ const Header: FC = (props: Props) => {
       className="relative px-16 left-0 top-0 w-full bg-white border-solid border-b z-[9999]"
       onMouseLeave={() => setHoverMenu({ show: false, root: '', subMenu: '' })}
     >
-      <div className="flex items-center justify-center m-auto max-w-7xl drop-shadow-xl">
+      <div className="flex items-center justify-center max-w-7xl drop-shadow-xl">
         <div className="flex items-center justify-start w-full h-[5rem]">
           <div className="flex items-center flex-shrink-0 ">
             <Link to="/">
