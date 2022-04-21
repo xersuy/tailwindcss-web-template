@@ -5,7 +5,7 @@ import DirectALinerPage from '~/pages/services/DirectALinerPage';
 type Props = {};
 type ServiceType = 'direct';
 
-const Service_TYPE_COMPONENT_MAP = {
+const SERVICE_TYPE_COMPONENT_MAP = {
   direct: DirectALinerPage,
 };
 
@@ -13,14 +13,14 @@ const ServiceRoutes = (props: Props) => {
   const params = useParams();
   const { serviceType } = params as { serviceType: ServiceType };
 
-  const ServiceTypeTypeComponent = useMemo(
-    () => Service_TYPE_COMPONENT_MAP[serviceType],
+  const ServiceTypeComponent = useMemo(
+    () => SERVICE_TYPE_COMPONENT_MAP[serviceType],
     [serviceType],
   );
 
   return (
     <WrapContainer>
-      <ServiceTypeTypeComponent />
+      <ServiceTypeComponent />
     </WrapContainer>
   );
 };

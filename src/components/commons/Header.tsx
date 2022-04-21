@@ -2,8 +2,6 @@ import React, { FC, useCallback, useEffect, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { MENU_ITEM_LIST, geSubKeyToUrl } from '~/utils/navMapper';
 
-import classNames from 'classnames';
-
 type Props = {};
 
 const Header: FC = (props: Props) => {
@@ -32,12 +30,14 @@ const Header: FC = (props: Props) => {
               />
             </Link>
           </div>
-          <ul className="flex flex-row ml-[9rem] w-full max-w-[32rem]">
+          <ul className="flex flex-row ml-[9rem] w-full max-w-[32rem] flex-nowrap">
             {(MENU_ITEM_LIST ?? []).map((menu) => {
               return (
                 <li
                   key={`header_${menu.root}`}
-                  className={'relative left-0 font-bold cursor-pointer w-full'}
+                  className={
+                    'relative left-0 font-bold cursor-pointer w-full flex-nowrap whitespace-nowrap'
+                  }
                   onMouseOver={() =>
                     setHoverMenu({
                       show: true,
@@ -48,21 +48,26 @@ const Header: FC = (props: Props) => {
                 >
                   {menu.name}
                   {hoverMenu.show && menu.root === hoverMenu.root ? (
-                    <div className="absolute left-0 top-[3.5rem] flex w-full z-[99999]">
+                    <div className="absolute left-0 top-[3.5rem] flex w-full z-[99999] whitespace-nowrap">
                       <nav>
                         <ul className="flex flex-col justify-center">
                           {(geSubKeyToUrl(hoverMenu.subMenu) ?? []).map(
                             (submenu, idx) => {
+                              //console.log(submenu);
                               return (
-                                <NavLink
+                                <Link
                                   key={idx}
                                   className="font-normal"
                                   to={`/${menu.root}/${submenu.path}/`}
                                 >
-                                  <li className={'mt-[0.8rem] cursor-pointer'}>
+                                  <li
+                                    className={
+                                      'mt-[0.8rem] cursor-pointer flex-nowrap'
+                                    }
+                                  >
                                     {submenu.name}
                                   </li>
-                                </NavLink>
+                                </Link>
                               );
                             },
                           )}

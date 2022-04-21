@@ -3,8 +3,8 @@ import { useParams } from 'react-router';
 import WrapContainer from '~/components/commons/WrapContainer';
 
 import IntroducePage from '~/pages/companys/IntroducePage';
-import CompanyIntroducePage from '~/pages/companys/IntroducePage';
-import ContactPage from '~/pages/companys/IntroducePage';
+import CompanyIntroducePage from '~/pages/companys/CompanyIntroducePage';
+import ContactPage from '~/pages/companys/ContactPage';
 
 type Props = {};
 
@@ -16,12 +16,13 @@ const COMPANY_TYPE_COMPONENT_MAP = {
   contact: ContactPage,
 };
 
-const CompanyRoutes = (props: Props) => {
+export default function CompanyRoutes(props: Props) {
   const params = useParams();
   const { companyType } = params as { companyType: CompanyType };
+  console.log(companyType);
 
   const CompanyTypeComponent = useMemo(
-    () => COMPANY_TYPE_COMPONENT_MAP[companyType],
+    () => COMPANY_TYPE_COMPONENT_MAP[companyType ?? 'introduce'],
     [companyType],
   );
 
@@ -30,6 +31,4 @@ const CompanyRoutes = (props: Props) => {
       <CompanyTypeComponent />
     </WrapContainer>
   );
-};
-
-export default CompanyRoutes;
+}
