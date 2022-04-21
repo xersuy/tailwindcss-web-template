@@ -19,7 +19,6 @@ const COMPANY_TYPE_COMPONENT_MAP = {
 export default function CompanyRoutes(props: Props) {
   const params = useParams();
   const { companyType } = params as { companyType: CompanyType };
-  console.log(companyType);
 
   const CompanyTypeComponent = useMemo(
     () => COMPANY_TYPE_COMPONENT_MAP[companyType ?? 'introduce'],

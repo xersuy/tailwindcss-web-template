@@ -8,7 +8,9 @@ type Props = {};
 */
 const IntroducePage = (props: Props) => {
   return (
-    <WrapDiv className="px-16 bg-gray-300 py-9 vendor_class">
+    <WrapDiv className="px-16 bg-white py-9 vendor_class">
+      <div className="font-normal text-md">인사말씀</div>
+      <BrTagger count={1} />
       <div className="flex justify-between w-full felx-row ">
         <div className="flex flex-col w-1/2 mr-[5rem]">
           <div className="text-2xl font-bold">
