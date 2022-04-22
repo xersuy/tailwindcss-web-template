@@ -11,7 +11,6 @@ import ServiceRoutes from './pages/services/ServiceRoutes';
 const App = () => {
   library.add(fas);
   library.add(fab);
-
   return (
     <BrowserRouter>
       <RotuerScrollTop />
