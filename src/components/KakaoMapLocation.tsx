@@ -26,9 +26,10 @@ const KakaoMapLocation = (props: Props) => {
       new kakao.maps.Marker({ map, position: markerPosition });
     });
   }, []);
+
   return (
     <div>
-      <div id={'map'} ref={container}></div>
+      <div id={'map'} className="w-full h-[800px]" ref={container}></div>
     </div>
   );
 };
